@@ -3,9 +3,7 @@
 Semester: Winter 2026  
 Group: 3  
 Course: Programming - Software Quality Assurance  
- 
-
----
+ Group Members: SADAVI CHALASANI,SARAH VELUZ , ROBERT LANGA
 
 ## Project Overview
 
@@ -14,7 +12,7 @@ The class allows a user to set or get rectangle dimensions and calculate propert
 
 The project also uses **Git** for version control and demonstrates proper Git commit documentation, code structure, and testing methodology.
 
----
+
 
 ##  Rectangle Class Details
 
