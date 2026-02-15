@@ -6,58 +6,64 @@ using System.Threading.Tasks;
 
 namespace Assignment_02
 {
-    internal class rectangle
+    // creating class that will calculate the area of the rectangle
+    public class Rectangle
     {
-        public class Rectangle
+        private int length; // to store the length side of rectangle
+        private int width; // to store the width side of the rectangle
+
+        // default constructor sers both sides to 1
+        public Rectangle()
         {
-            private int length;
-            private int width;
+            length = 1;
+            width = 1;
+        }
 
-            // Default constructor
-            public Rectangle()
-            {
-                length = 1;
-                width = 1;
-            }
+        // constructor that accepts values
+        public Rectangle(int newLength, int newWidth)
+        {
+            length = newLength;
+            width = newWidth;
+        }
 
-            // Non-default constructor
-            public Rectangle(int length, int width)
-            {
-                this.length = length;
-                this.width = width;
-            }
+        // to get the length value
+        public int GetLength()
+        {
+            return length;
+        }
 
-            public int GetLength()
-            {
-                return length;
-            }
+        // to update the length 
+        public int SetLength(int newLength)
+        {
+            length = newLength;
+            return length;
+        }
 
-            public int SetLength(int length)
-            {
-                this.length = length;
-                return this.length;
-            }
+        // To get the width value
+        public int GetWidth()
+        {
+            return width;
+        }
 
-            public int GetWidth()
-            {
-                return width;
-            }
+        // To update the width value
+        public int SetWidth(int newWidth)
+        {
+            width = newWidth;
+            return width;
+        }
 
-            public int SetWidth(int width)
-            {
-                this.width = width;
-                return this.width;
-            }
+        // Adding all the sides together
+        public int GetPerimeter()
+        {
+            int perimeter = (length + width) * 2;
+            return perimeter;
+        }
 
-            public int GetPerimeter()
-            {
-                return 2 * (length + width);
-            }
-
-            public int GetArea()
-            {
-                return length * width;
-            }
+        // multiplying both sides to get area
+        public int GetArea()
+        {
+            int area = length * width;
+            return area;
         }
     }
 }
